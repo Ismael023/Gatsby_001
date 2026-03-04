@@ -1,0 +1,20 @@
+/*colores definidos */
+:root{ 
+
+  --font-h1: #1948af;
+  --font-h2: #1f2deb;
+  --font-h3: #255dd6;
+  --font-h4: #0000;
+  --font-h5: #0000;
+
+  --bgBodyMain: #d3f0f7;
+
+  --bgNavbarUp: #8ddcf0;
+  --bgNavbarDown: #d7e8ec;
+
+  --bgBtnHamburguesa: #f79fd9;
+
+
+  --bgFooterUp: #1948af;
+  --bgFooterDown: #85a8f3;
+}
