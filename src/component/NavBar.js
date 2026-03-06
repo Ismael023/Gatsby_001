@@ -4,9 +4,9 @@ import { Link } from "gatsby";
 import  "../styles/styles.css";
 import  "../styles/colors.css";
 
-const links =[  {name: 'Home', href: '/'},
-             {name: 'Portafolio', href: '/portfolio'},
-             {name: 'Contacto', href: '/contact'}];
+const links =[  {name: 'Home', href: '/', title:'Pagina principal'},
+             {name: 'Portafolio', href: '/portfolio', title:'Portafolio'},
+             {name: 'Contacto', href: '/contact', title:'Contacto'}];
 
 export default function navBar() {
   return(
@@ -17,6 +17,7 @@ export default function navBar() {
         return (
           <Link to={link.href}
             className="linkMenu"
+            title={link.title}
             >
             {link.name}
           </Link>
