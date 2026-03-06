@@ -8,7 +8,7 @@ import Layout from "../component/LayoutPage"
 const Portfolio = () => {
   return (
     <Layout>
-      <h1>Portafolio</h1>
+      <h2>Portafolio</h2>
     </Layout>
   )
 }
