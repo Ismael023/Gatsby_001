@@ -6,7 +6,7 @@ import "../styles/colors.css";
 export default function footer (){
   return (
     <footer className="footer">
-      <h2>Aqui van los creditos</h2>
+      <h4>© 2026 Ismael Ramírez Díaz</h4>
     </footer>
   )
 }
