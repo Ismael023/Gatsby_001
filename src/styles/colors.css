@@ -1,20 +1,28 @@
 /*colores definidos */
 :root{ 
 
-  --font-h1: #1948af;
-  --font-h2: #1f2deb;
-  --font-h3: #255dd6;
-  --font-h4: #0000;
-  --font-h5: #0000;
+  --font-h1: #003366;
+  --font-h2: #133786;
+  --font-h3: #16419c;
+  --font-h4: #1948af;
+  --font-h5: #194ab3;
 
-  --bgBodyMain: #d3f0f7;
+  --bgBodyMain: #d2def9;
 
-  --bgNavbarUp: #8ddcf0;
-  --bgNavbarDown: #d7e8ec;
+  --bgNavbarUp: #8faeef;
+  --bgNavbarDown: #d2def9;
+  --linkMenuHover: #638de9;
+
 
   --bgBtnHamburguesa: #f79fd9;
 
+  --lblColor: #16419c;
+  --borderColorInput: #194ab3;
+  --bgColorInput: #d2def9;
 
-  --bgFooterUp: #1948af;
-  --bgFooterDown: #85a8f3;
+
+
+
+  --bgFooterUp: #8faeef;
+  --bgFooterDown: #d2def9;
 }

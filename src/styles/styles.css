@@ -26,11 +26,10 @@ h3{
 
 .bodyMain{  
     background: var(--bgBodyMain);
-    color: var();
 }
 
 .navbar{
-  background:  linear-gradient(to right, var(--bgNavbarUp), var(--bgNavbarDown) );
+  background:  linear-gradient(to bottom , var(--bgNavbarUp), var(--bgNavbarDown) );
   height: 40px;
 }
 
@@ -48,7 +47,13 @@ h3{
   padding: 12px;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 6px;
 }
+
+.linkMenu:hover{
+  background: var(--linkMenuHover);
+}
+
 .btnHamburguesa{
   display: none;
   font-size: 10px;
@@ -62,7 +67,6 @@ h3{
     z-index: 1100;
   width: 50px;
   height: 40px;
-
 }
 
 .menuMovil{
@@ -74,11 +78,59 @@ h3{
 .footer{
   display: flex;
   background:  linear-gradient(to top, var(--bgFooterUp), var(--bgFooterDown) );
-  height: 40px;
+  height: 60px;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
+/* formularios*/
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.divForms{
+  padding: 5px;
+  border-radius: 6px;
+}
+.labelForm{
+ display: inline-block;
+ text-align: justify;
+ vertical-align: top;
+ color: var(--lblColor);
+ width: 120px;
+ padding: 5px;
+}
+
+.inputForm{
+  width: calc(95% - 120px);/* 70px */
+	padding: 8px 5px;
+	border-radius: 6px ;
+	border: 2px solid var(--borderColorInput);
+	background: var(--bgColorInput);
+	font-size: 0.9em;
+}
+.selectForm{
+  width: calc(95% - 120px);/* 70px */
+	padding: 8px 5px;
+	border-radius: 6px ;
+	border: 2px solid var(--borderColorInput);
+	background: var(--bgColorInput);
+	font-size: 0.9em;
+}
+
+.textareaForm{
+   width: calc(95% - 120px);/* 70px */
+   height: 200px;
+	padding: 8px 5px;
+	border-radius: 6px ;
+	border: 2px solid var(--borderColorInput);
+	background: var(--bgColorInput);
+	font-size: 0.9em;
+}
+
+
+/* responsive */
 
 @media (max-width: 700px) {
   .menu{
@@ -94,5 +146,18 @@ h3{
   .linkMenu{
     flex-direction: column ;
   }
+
+  .labelForm{
+    width: 95%;
+  }
+.inputForm{
+  width: 95%;
+}
+.selectForm{
+  width: 95%;
+}
+.textareaForm{
+  width: 95%;
+}
 
 }
