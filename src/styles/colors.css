@@ -13,12 +13,16 @@
   --bgNavbarDown: #d2def9;
   --linkMenuHover: #638de9;
 
-
   --bgBtnHamburguesa: #f79fd9;
 
+  /*  Colores para Formulario*/
   --lblColor: #16419c;
   --borderColorInput: #194ab3;
   --bgColorInput: #d2def9;
+
+  --btnTxtColor: #003366;
+  --btnColorBorder: #0a6fc2;
+  --btnFormHover: #2196F3;
 
 
 

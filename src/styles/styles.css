@@ -23,16 +23,52 @@ h3{
   color: var(--font-h5);
   text-align: justify;
 }
-
-.bodyMain{  
-    background: var(--bgBodyMain);
+/*  con esta config el footer se qeuda fijo  al fondo pero bloquea el contenido inferior 
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background: var(--bgBodyMain);
 }
 
+footer{
+  background:  linear-gradient(to top, var(--bgFooterUp), var(--bgFooterDown) );
+  height: 5 0px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+  */
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background: var(--bgBodyMain);
+}
+main{
+  flex-grow: 1;
+}
+
+footer{
+  background:  linear-gradient(to top, var(--bgFooterUp), var(--bgFooterDown) );
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  width: 100%;
+}
+  /* seccion barra de navegaciónr */
 .navbar{
   background:  linear-gradient(to bottom , var(--bgNavbarUp), var(--bgNavbarDown) );
   height: 40px;
 }
-
 .menu{
   display: flex;
   flex-direction: row ;
@@ -75,14 +111,7 @@ h3{
   justify-content: flex-end;
 }
 
-.footer{
-  display: flex;
-  background:  linear-gradient(to top, var(--bgFooterUp), var(--bgFooterDown) );
-  height: 60px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
+
 /* formularios*/
 form{
   display: flex;
@@ -102,6 +131,7 @@ form{
  text-align: start;
  vertical-align: top;
  color: var(--lblColor);
+ font-weight: bold;
  width: 120px;
  padding: 5px;
 }
@@ -132,6 +162,18 @@ form{
 	background: var(--bgColorInput);
 	font-size: 0.9em;
 }
+.btnForm{
+  width: 100px;
+  height: 40px;
+  border: 2px solid var(--btnColorBorder);
+  color: var(--btnTxtColor);
+  background-color: var(--btnForm);
+  border-radius: 5px;
+}
+
+.btnForm:hover{
+  background: var(--btnFormHover);
+} 
 
 
 /* responsive */
