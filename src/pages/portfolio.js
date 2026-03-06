@@ -4,10 +4,15 @@ import React from "react";
 
 import Layout from "../component/LayoutPage"
 
-export default function portfolio(){
-  return ( 
+
+const Portfolio = () => {
+  return (
     <Layout>
       <h1>Portafolio</h1>
     </Layout>
   )
 }
+
+export default Portfolio
+
+export const Head = () => <title>Portafolio</title>
