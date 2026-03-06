@@ -6,14 +6,14 @@ import Footer from "./Footer"
 
 const layoutPage =({children}) => {
   return (
-    <div>
+    <main className="bodyMain">
       <NavBar/>
-      <div>
+      
         {children}
-      </div>
+      
       
       <Footer/>
-    </div>
+    </main>
   )
 }
 
