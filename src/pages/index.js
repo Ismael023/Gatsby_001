@@ -1,23 +1,13 @@
 import * as React from "react"
-import NavBar from "../component/NavBar"
-import Footer from "../component/Footer"
-
-import "../styles/styles.css"
-import "../styles/colors.css"
+import Layout from "../component/LayoutPage"
 
 
   
 const IndexPage = () => {
   return (
-    <main className="bodyMain" > {/*style={pageStyles}*/}
-     <NavBar/>  
-
-      
-        <h1>Pagina principal</h1>
-      
-
-      <Footer/>
-    </main>
+    <Layout>
+      <h1>Pagina principal</h1>
+    </Layout>
   )
 }
 
