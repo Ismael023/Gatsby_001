@@ -23,30 +23,11 @@ h3{
   color: var(--font-h5);
   text-align: justify;
 }
-/*  con esta config el footer se qeuda fijo  al fondo pero bloquea el contenido inferior 
-body{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0px;
-  padding: 0px;
-  background: var(--bgBodyMain);
-}
 
-footer{
-  background:  linear-gradient(to top, var(--bgFooterUp), var(--bgFooterDown) );
-  height: 5 0px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-}
-  */
 body{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh; /* vh*/
   margin: 0px;
   padding: 0px;
   background: var(--bgBodyMain);
