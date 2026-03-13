@@ -8,7 +8,7 @@ const links =[  {name: 'Home', href: '/', title:'Pagina principal', id:1},
              {name: 'Portafolio', href: '/portfolio', title:'Portafolio', id:2 },
              {name: 'Contacto', href: '/contact', title:'Contacto', id:3 }];
 
-  const menuButtons = document.querySelectorAll('.menu-btn');
+/*  const menuButtons = document.querySelectorAll('.menu-btn');
   const mobileMenus = document.querySelectorAll('.mobile-menu');
 
    menuButtons.forEach((btn, index) => {
@@ -16,7 +16,7 @@ const links =[  {name: 'Home', href: '/', title:'Pagina principal', id:1},
            mobileMenus[index].classList.toggle('hidden');
        });
    });
-
+*/
 
 export default function navBar() {
   return(
