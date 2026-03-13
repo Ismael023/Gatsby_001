@@ -3,13 +3,13 @@ import Layout from "../component/LayoutPage"
 //import Swal from "sweetalert2" //se elimina ya que causa error al compilar el sitio
 
 const typeProyect =[
-  {option : "Tipo de Proyecto", value : ""},
-  {option : "Pagina Web", value : "1"},
-  {option:"Infraestrutura de redes", value:"2"},
-  {option:"Soporte Tecnico", value:"3"}
+  {option :"Tipo de Proyecto", value : 0},
+  {option :"Pagina Web", value : 1},
+  {option :"Infraestrutura de redes", value:2},
+  {option :"Soporte Tecnico", value:3}
 ];
 
-  /*
+  
     const pressBtnForm02 = async (e) => { 
       e.preventDefault(); // <--- Esto evita que la página se recargue    
 
@@ -23,7 +23,7 @@ const typeProyect =[
         timer: 1500
       });
     }
-  */
+  
 
 const Contact = () => {
   return (
@@ -47,7 +47,7 @@ const Contact = () => {
             <label className="labelForm" htmlFor="tipoProyecto">Tipo de proyecto</label>
             <select name="tipoProyecto" className="selectForm">
               {typeProyect.map((option) => {
-                return <option  value={option.value}>{option.option}</option>
+                return <option key={option.value} value={option.value}>{option.option}</option>
               })}
               </select>
               </div>
@@ -57,7 +57,7 @@ const Contact = () => {
           </div>
 
           <div className="divForms">
-            <button className="btnForm" >Enviar</button> {/*onClick={pressBtnForm02}*/}
+            <button className="btnForm" onClick={pressBtnForm02}>Enviar</button> {/**/}
           </div>
         </form>
      
