@@ -7,10 +7,15 @@
   --font-h4: #1948af;
   --font-h5: #194ab3;
 
+   --font-span:#003366;
+   --font-p:#1948af;
+   --font-span:#003366;
+   --font-rotative: #003366;
+
   --bgBodyMain: #d2def9;
 
   --bgNavbarUp: #8faeef;
-  --bgNavbarDown: #d2def9;
+  --bgNavbarDown: #bccef5;
   --linkMenuHover: #638de9;
 
   --bgBtnHamburguesa: #f79fd9;
