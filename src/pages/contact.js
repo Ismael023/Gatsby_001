@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../component/LayoutPage"
+import Swal from "sweetalert2";
 
 const typeProyect =[
   {option : "Tipo de Proyecto", value : ""},
@@ -9,27 +10,36 @@ const typeProyect =[
 ];
 
 
+  const pressBtnForm02 = (e) => { 
+    e.preventDefault(); // <--- Esto evita que la página se recargue    
+    Swal.fire({
+      text: 'En breve nos comunicaremos contigo.',
+      icon: 'success',
+      confirmButtonText: 'Gracias',
+      timer: 1500
+    });
+  }
+
 const Contact = () => {
   return (
     <Layout>
-     
+      
         <h2>Formulario de contacto</h2>
-        <p>Nos ponemos en contacto</p>
         <form>
           <div className="divForms"> 
-            <label className='labelForm' htmlfor="nombre">Nombre</label>
+            <label className='labelForm' htmlFor="nombre">Nombre</label>
             <input type='text' name="nombre" id="nombre" placeholder='Nombre' className="inputForm"/>
           </div>
           <div className="divForms"> 
-            <label className="labelForm" htmlfor="email">Email</label>
+            <label className="labelForm" htmlFor="email">Email</label>
             <input type='email' name='email' placeholder='Email' className="inputForm"/>
           </div>
           <div className="divForms"> 
-            <label className="labelForm" htmlfor="telefono">Telefono</label>
+            <label className="labelForm" htmlFor="telefono">Telefono</label>
             <input type='tel' name='telefono' placeholder='Telefono' className="inputForm"/>
           </div>
           <div className="divForms"> 
-            <label className="labelForm" htmlfor="tipoProyecto">Tipo de proyecto</label>
+            <label className="labelForm" htmlFor="tipoProyecto">Tipo de proyecto</label>
             <select name="tipoProyecto" className="selectForm">
               {typeProyect.map((option) => {
                 return <option  value={option.value}>{option.option}</option>
@@ -37,14 +47,13 @@ const Contact = () => {
               </select>
               </div>
           <div className="divForms"> 
-            <label className="labelForm" htmlfor="mensaje">Mensaje</label>
+            <label className="labelForm" htmlFor="mensaje">Mensaje</label>
             <textarea name='mensaje' placeholder='Mensaje' className="textareaForm"/>
           </div>
 
           <div className="divForms">
-            <button className="btnForm">Enviar</button>
+            <button className="btnForm" onClick={pressBtnForm02}>Enviar</button>
           </div>
-
         </form>
      
     </Layout>
