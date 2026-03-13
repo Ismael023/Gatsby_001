@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+  
+.header{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.header h1{  
+  font-family: "Gelasio", serif; /*"Jacques Francois Shadow", serif;*/
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3em;
+  color: var(--font-h1);
+  text-align: center;
+}
+
+.header h3{
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  color: var(--font-h3);
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.header p{
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: var(--font-p);
+  font-size: 1.3rem;
+}
+
+ .logoHome{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+  span{
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    color: var(--font-span) ; 
+
+    font-style: normal;
+   /* font-size: 1rem;*/
+    font-weight: bold;
+  }
+
+.rotative{
+  display: inline-block;
+  color: var(--font-rotative);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-align: justify;
+  font-size: 3rem;
+
+  /* Animación */
+  animation: aparecerYSubir 0.5s ease-out forwards;
+}
+@keyframes aparecerYSubir {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
