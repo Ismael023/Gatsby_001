@@ -9,20 +9,21 @@ const typeProyect =[
   {option:"Soporte Tecnico", value:"3"}
 ];
 
+  /*
+    const pressBtnForm02 = async (e) => { 
+      e.preventDefault(); // <--- Esto evita que la página se recargue    
 
-  const pressBtnForm02 = async (e) => { 
-    e.preventDefault(); // <--- Esto evita que la página se recargue    
+      // 2. Importamos SweetAlert solo cuando se necesita
+      const { default: Swal } = await import("sweetalert2");
 
-    // 2. Importamos SweetAlert solo cuando se necesita
-    const { default: Swal } = await import("sweetalert2");
-
-    Swal.fire({
-      text: 'En breve nos comunicaremos contigo.',
-      icon: 'success',
-      confirmButtonText: 'Gracias',
-      timer: 1500
-    });
-  }
+      Swal.fire({
+        text: 'En breve nos comunicaremos contigo.',
+        icon: 'success',
+        confirmButtonText: 'Gracias',
+        timer: 1500
+      });
+    }
+  */
 
 const Contact = () => {
   return (
@@ -56,7 +57,7 @@ const Contact = () => {
           </div>
 
           <div className="divForms">
-            <button className="btnForm" onClick={pressBtnForm02}>Enviar</button>
+            <button className="btnForm" >Enviar</button> {/*onClick={pressBtnForm02}*/}
           </div>
         </form>
      
