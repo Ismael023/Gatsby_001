@@ -4,9 +4,19 @@ import { Link } from "gatsby";
 import  "../styles/styles.css";
 import  "../styles/colors.css";
 
-const links =[  {name: 'Home', href: '/', title:'Pagina principal'},
-             {name: 'Portafolio', href: '/portfolio', title:'Portafolio'},
-             {name: 'Contacto', href: '/contact', title:'Contacto'}];
+const links =[  {name: 'Home', href: '/', title:'Pagina principal', id:1},
+             {name: 'Portafolio', href: '/portfolio', title:'Portafolio', id:2 },
+             {name: 'Contacto', href: '/contact', title:'Contacto', id:3 }];
+
+  const menuButtons = document.querySelectorAll('.menu-btn');
+  const mobileMenus = document.querySelectorAll('.mobile-menu');
+
+   menuButtons.forEach((btn, index) => {
+       btn.addEventListener('click', () => {
+           mobileMenus[index].classList.toggle('hidden');
+       });
+   });
+
 
 export default function navBar() {
   return(
@@ -37,6 +47,7 @@ export default function navBar() {
         {links.map( (link) => { 
           return (
             <Link to={link.href} 
+              key={link.id}
               className="linkMenu"
               >
               {link.name}
