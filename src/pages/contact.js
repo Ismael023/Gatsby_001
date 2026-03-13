@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../component/LayoutPage"
-import Swal from "sweetalert2";
+import Swal from "sweetalert2"
 
 const typeProyect =[
   {option : "Tipo de Proyecto", value : ""},
