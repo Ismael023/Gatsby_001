@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../component/LayoutPage"
-import Swal from "sweetalert2"
+//import Swal from "sweetalert2" //se elimina ya que causa error al compilar el sitio
 
 const typeProyect =[
   {option : "Tipo de Proyecto", value : ""},
@@ -10,8 +10,12 @@ const typeProyect =[
 ];
 
 
-  const pressBtnForm02 = (e) => { 
+  const pressBtnForm02 = async (e) => { 
     e.preventDefault(); // <--- Esto evita que la página se recargue    
+
+    // 2. Importamos SweetAlert solo cuando se necesita
+    const { default: Swal } = await import("sweetalert2");
+
     Swal.fire({
       text: 'En breve nos comunicaremos contigo.',
       icon: 'success',
