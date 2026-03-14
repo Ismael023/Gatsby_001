@@ -1,12 +1,10 @@
 import React from "react";
-
-import "../styles/styles.css";
-import "../styles/colors.css";
+import * as styles from "../styles/footer.module.css"
 
 export default function footer (){
   return (
-    <footer > { /* className="footer" */}
-      <h4>© 2026 Ismael Ramírez Díaz.</h4>
+    <footer className={styles.foter}> { /* className="footer" */}
+      <h4>Copyright 2026 ©  Ismael Ramírez Díaz.</h4>
     </footer>
   )
 }

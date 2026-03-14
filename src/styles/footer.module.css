@@ -1,0 +1,17 @@
+
+.foter{
+  background:  linear-gradient(to top, var(--bgFooterUp), var(--bgFooterDown) );
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  width: 100%;
+}
+
+.foter h4{
+  color: var(--font-h3);
+  text-align: center;
+  font-family: "Gelasio", sans-serif;
+  display: inline-block;
+}
