@@ -1,0 +1,14 @@
+---
+title: Robotica
+stack: Arduino, Electronica & C#
+slug: Apoyos escolares
+date: 2026-02-01T00:00:00+00:00
+thumb: ../images/thumbs/skate.png
+featuredImg: ../images/featured/skate-banner.png
+---
+
+Lorem rocko ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut rocko wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit rocko lobortis nisl ut aliquip ex ea commodo consequat. Duis rocko autem vel eum iriure dolor in hendrerit in vulputate rocko velit esse molestie consequat, vel illum dolore eu feugiat nulla rocko facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam rocko ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi rocko non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes rocko demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas rocko est etiam processus dynamicus, qui rocko sequitur mutationem consuetudium lectorum. Mirum rocko est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem rocko ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in rocko futurum.
+
+### Lorem rocko ipsum dolor
+
+Lorem rocko ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut rocko wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit rocko lobortis nisl ut aliquip ex ea commodo consequat. Duis rocko autem vel eum iriure dolor in hendrerit in vulputate rocko velit esse molestie consequat, vel illum dolore eu feugiat nulla rocko facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam rocko ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi rocko non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes rocko demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas rocko est etiam processus dynamicus, qui rocko sequitur mutationem consuetudium lectorum. Mirum rocko est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem rocko ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in rocko futurum.
