@@ -1,0 +1,61 @@
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+
+ margin: 10px;
+ padding: 5px;
+ 
+ border-radius: 6px;
+}
+
+.cards div{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: solid 2px var(--borderCard);
+  width: 300px;
+  height: 350px;
+  align-items: center;  
+  text-align: center;
+
+  transition: transform 1s ease-out;
+}
+
+.cards div:hover{
+  border: solid 2px var(--borderCardHover);
+  transform: translateY(-15px);
+}
+
+.cards img{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.cards h3{
+  text-align: center;
+  color: var(--font-h3);
+  font-family: "Montserrat", sans-serif;
+}
+
+.cards p{
+  color: var(--font-p);
+  font-family: "Montserrat", sans-serif;
+}
+
+.cards button{
+  width: 100px;
+  height: 40px;
+  border: 2px solid var(--btnCardBorder);
+  color: var(--btnCardTxt);
+  background-color: var(--btnCardBg);
+  border-radius: 5px;
+}
+.cards button:hover{
+  background: var(--btnCardBgHover);
+  color: var(--btnCardTxtHover);
+}
