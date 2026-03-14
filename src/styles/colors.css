@@ -18,7 +18,18 @@
   --bgNavbarDown: #bccef5;
   --linkMenuHover: #638de9;
 
-  --bgBtnHamburguesa: #f79fd9;
+  --bgBtnHamburguesa: #;
+
+  /* Valores para tarjetas */
+  --borderCard: #1948af;
+  --borderCardHover: #003366;
+
+  --btnCardBorder: #8faeef;
+  --btnCardTxt: #003366;
+  --btnCardBg: #bccef5;
+  --btnCardBgHover: #003366;
+  --btnCardTxtHover: #ffffff;
+
 
   /*  Colores para Formulario*/
   --lblColor: #16419c;

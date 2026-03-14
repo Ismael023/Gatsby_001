@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
   box-sizing: border-box;
   font-family: -apple-system, Montserrat, sans-serif, serif;
 }
-/*
+
 h1{
   color: var(--font-h1);
   text-align: center;
@@ -13,20 +14,20 @@ h2{
   color: var(--font-h2);
   text-align: center;
 } 
-h4{
-  color: var(--font-h4);
+h3{
+  color: var(--font-h3);
   text-align: justify;
-  } 
-  h5{
-    color: var(--font-h5);
-    text-align: justify;
-    }
-    */
+} 
+h4{
+color: var(--font-h4);
+text-align: justify;
+} 
+h5{
+  color: var(--font-h5);
+  text-align: justify;
+}
+    
 
-  h3{
-    color: var(--font-h3);
-    text-align: justify;
-  } 
 body{
   display: flex;
   flex-direction: column;
@@ -41,15 +42,6 @@ main{
   padding: 5px;;
 }
 
-footer{
-  background:  linear-gradient(to top, var(--bgFooterUp), var(--bgFooterDown) );
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0px;
-  width: 100%;
-}
   /* seccion barra de navegaciónr */
 .navbar{
   background:  linear-gradient(to bottom , var(--bgNavbarUp), var(--bgNavbarDown) );
