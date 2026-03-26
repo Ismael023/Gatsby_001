@@ -15,8 +15,7 @@ const cards =[
 
 const Portfolio = () => {
   return (
-    <Layout>      
-      <h2>Portafolio</h2>
+    <Layout pageTitle="Portafolio">   
       <section className={styles.cards}>
         {cards.map((card) => {
           return (

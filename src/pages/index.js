@@ -20,9 +20,9 @@ const IndexPage = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout pageTitle="Inicio">
       <section className={styles.header} >
-        <h1>ISMAEL RAMÍREZ DÍAZ</h1>
+        <h2>ISMAEL RAMÍREZ DÍAZ</h2>
         <div>
         <img className={styles.logoHome} src={image} alt="logo" ></img>
         <h3>Soluciones Integrales <br></br>para tu{" "} 
