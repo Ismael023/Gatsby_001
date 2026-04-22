@@ -9,7 +9,7 @@
 
    --font-span:#003366;
    --font-p:#1948af;
-   --font-span:#003366;
+   --font-span:#003366; /* este está repetido */
    --font-rotative: #003366;
 
   --bgBodyMain: #d2def9;
@@ -18,7 +18,7 @@
   --bgNavbarDown: #bccef5;
   --linkMenuHover: #638de9;
 
-  --bgBtnHamburguesa: #;
+  --bgBtnHamburguesa: #; /* Que ibas a hacer aquí */
 
   /* Valores para tarjetas */
   --borderCard: #1948af;
@@ -40,7 +40,8 @@
   --btnColorBorder: #0a6fc2;
   --btnFormHover: #2196F3;
 
-
+  /* cuida estos espacios, no deben existir, ensucia mucho el código */
+  /* sólo una línea de separación */
 
 
   --bgFooterUp: #8faeef;

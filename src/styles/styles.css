@@ -1,3 +1,21 @@
+/*
+Puedes separar el archivo para qu eno se crezcca mucho y lleve un sentido, respecto al contexto,
+aquí puedes dejar estilos generales h1, h2, body, main, etc..
+
+y crear menu.css dentro del componente del menú, así lo puedes reutilizar en otro proyecto
+footer igual
+
+recuerda que los estilos de un componente puedes agruparlos en un carpeta, ejemplo:
+- components
+   - menu
+     - menu.jsx
+     - menu.css
+   - footer
+     - footer.jsx
+     - footer.css
+*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -32,7 +50,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  margin: 0px;
+  margin: 0px; /* si sólo es 0 no pongas el px */
   padding: 0px;
   background: var(--bgBodyMain);
 }
@@ -44,7 +62,7 @@ main{
 
   /* seccion barra de navegaciónr */
 .navbar{
-  background:  linear-gradient(to bottom , var(--bgNavbarUp), var(--bgNavbarDown) );
+  background:  linear-gradient(to bottom , var(--bgNavbarUp), var(--bgNavbarDown) );  /* estas variables manéjalas como bg-navbar-up y bg-navbar-down por el standard ya lo piden mucho, antes valía queso*/
   height: 50px;
 }
 .menu{
@@ -176,6 +194,7 @@ form{
   .labelForm{
     width: 95%;
   }
+  /* identa bien el código para que sea fácil de leer */
 .inputForm{
   width: 95%;
 }

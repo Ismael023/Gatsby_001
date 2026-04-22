@@ -1,5 +1,5 @@
 
-.foter{
+.foter{ /* te faltó una o */
   background:  linear-gradient(to top, var(--bgFooterUp), var(--bgFooterDown) );
   height: 50px;
   display: flex;
