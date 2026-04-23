@@ -1,7 +1,7 @@
 //import * as React from "react"
 import  React, { useState, useEffect } from "react"
 
-import Layout from "../component/LayoutPage"
+import Layout from "../component/Layout"
 import * as styles  from "../styles/home.module.css"
 //import { useState, useEffect } from "react"
 import image from "../images/logo-SF_02.png"

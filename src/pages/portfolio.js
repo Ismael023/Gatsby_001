@@ -1,6 +1,6 @@
 
 import React from "react"
-import Layout from "../component/LayoutPage"
+import Layout from "../component/Layout"
 import image from "../images/logo-SF_02.png"
 import * as styles from "../styles/portfolio.module.css"
 
