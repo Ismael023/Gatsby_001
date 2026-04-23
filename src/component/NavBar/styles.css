@@ -1,0 +1,23 @@
+.navbar{
+  background:  linear-gradient(to bottom , var(--bgNavbarUp), var(--bgNavbarDown) );  /* estas variables manéjalas como bg-navbar-up y bg-navbar-down por el standard ya lo piden mucho, antes valía queso*/
+  height: 50px;
+}
+.menu{
+  display: flex;
+  flex-direction: row ;
+  justify-content: flex-end;
+}
+
+.link-menu{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.link-menu:hover{
+  background: var(--linkMenuHover);
+}
