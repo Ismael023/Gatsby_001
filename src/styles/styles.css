@@ -43,8 +43,7 @@ text-align: justify;
 h5{
   color: var(--font-h5);
   text-align: justify;
-}
-    
+}    
 
 body{
   display: flex;
@@ -59,53 +58,6 @@ main{
   margin: 10px;
   padding: 5px;;
 }
-
-  /* seccion barra de navegaciónr */
-.navbar{
-  background:  linear-gradient(to bottom , var(--bgNavbarUp), var(--bgNavbarDown) );  /* estas variables manéjalas como bg-navbar-up y bg-navbar-down por el standard ya lo piden mucho, antes valía queso*/
-  height: 50px;
-}
-.menu{
-  display: flex;
-  flex-direction: row ;
-  justify-content: flex-end;
-}
-
-.linkMenu{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  padding: 12px;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 6px;
-}
-.linkMenu:hover{
-  background: var(--linkMenuHover);
-}
-
-.btnHamburguesa{
-  display: none;
-  font-size: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
-   /* background: var(--bgBtnHamburguesa);*/
-    color: white;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    z-index: 1100;
-  width: 50px;
-  height: 40px;
-}
-
-.menuMovil{
-  display: none;
-  flex-direction: column ;
-  justify-content: flex-end;
-}
-
 
 /* formularios*/
 form{
@@ -122,15 +74,14 @@ form{
   text-align: center;
 }
 .labelForm{
- display: inline-block;
- text-align: start;
- vertical-align: top;
- color: var(--lblColor);
- font-weight: bold;
- width: 120px;
- padding: 5px;
+  display: inline-block;
+  text-align: start;
+  vertical-align: top;
+  color: var(--lblColor);
+  font-weight: bold;
+  width: 120px;
+  padding: 5px;
 }
-
 .inputForm{
   width: calc(80% - 120px);/* 70px */
 	padding: 8px 5px;
@@ -147,7 +98,6 @@ form{
 	background: var(--bgColorInput);
 	font-size: 0.9em;
 }
-
 .textareaForm{
    width: calc(80% - 120px);/* 70px */
    height: 200px;
@@ -165,7 +115,6 @@ form{
   background-color: var(--btnForm);
   border-radius: 5px;
 }
-
 .btnForm:hover{
   background: var(--btnFormHover);
   color: white;
@@ -173,36 +122,17 @@ form{
 
 
 /* responsive */
-
-@media (max-width: 700px) {
-  /*
-  .menu{
-    display: none;
-  } 
-  
-  .btnHamburguesa {
-    display: flex;
-  }
-  .menuMovil{
-    display: flex;
-  }
-  .linkMenu{
-    flex-direction: column ;
-    align-items: end;
-  }
-*/
+@media (max-width: 700px) {  
   .labelForm{
     width: 95%;
   }
-  /* identa bien el código para que sea fácil de leer */
-.inputForm{
-  width: 95%;
-}
-.selectForm{
-  width: 95%;
-}
-.textareaForm{
-  width: 95%;
-}
-
+  .inputForm{
+    width: 95%;
+  }
+  .selectForm{
+    width: 95%;
+  }
+  .textareaForm{
+    width: 95%;
+  }
 }
