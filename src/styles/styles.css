@@ -45,18 +45,21 @@ h5{
   text-align: justify;
 }    
 
-body{
-  display: flex;
-  flex-direction: column;
-  min-height: 100dvh;
-  margin: 0px; /* si sólo es 0 no pongas el px */
-  padding: 0px;
-  background: var(--bgBodyMain);
+body{  
+  margin: 0;  
+  background: var(--bgBody);
+  padding-left: 5px;
+  padding-right: 5px; 
 }
 main{
   flex-grow: 1;
   margin: 10px;
   padding: 5px;;
+}
+.layout{
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 /* formularios*/
@@ -79,11 +82,11 @@ form{
   vertical-align: top;
   color: var(--lblColor);
   font-weight: bold;
-  width: 120px;
+  width: 95%;
   padding: 5px;
 }
 .inputForm{
-  width: calc(80% - 120px);/* 70px */
+  width: 95%;
 	padding: 8px 5px;
 	border-radius: 6px ;
 	border: 2px solid var(--borderColorInput);
@@ -91,7 +94,7 @@ form{
 	font-size: 0.9em;
 }
 .selectForm{
-  width: calc(80% - 120px);/* 70px */
+  width: 95%;
 	padding: 8px 5px;
 	border-radius: 6px ;
 	border: 2px solid var(--borderColorInput);
@@ -99,7 +102,7 @@ form{
 	font-size: 0.9em;
 }
 .textareaForm{
-   width: calc(80% - 120px);/* 70px */
+   width: 95%;
    height: 200px;
 	padding: 8px 5px;
 	border-radius: 6px ;
@@ -121,18 +124,33 @@ form{
 } 
 
 
-/* responsive */
-@media (max-width: 700px) {  
+/* puntos de ruptura  */
+@media (min-width:780px){
+  body{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .labelForm{
-    width: 95%;
+    width: 120px;
   }
   .inputForm{
-    width: 95%;
+    width: calc(80% - 120px);
   }
   .selectForm{
-    width: 95%;
+    width: calc(80% - 120px);
   }
   .textareaForm{
-    width: 95%;
+    width: calc(80% - 120px);
   }
 }
+
+@media (min-width:1800px){
+  body{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
+
+
