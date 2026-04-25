@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../component/Layout"
-//import Swal from "sweetalert2" //se elimina ya que causa error al compilar el sitio
+import Swal from "sweetalert2" //se elimina ya que causa error al compilar el sitio
 
 const typeProyect =[
   {option :"Tipo de Proyecto", value : 0},
