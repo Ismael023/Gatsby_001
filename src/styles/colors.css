@@ -1,35 +1,55 @@
 /*colores definidos */
 :root{ 
 
+  /* nueva estructura */
+  /* Colores base  */
+
+  --primary: #003366;
+  --secondary: #1948af;
+
+  --primary-50: color-mix(in srgb, var(--primary) 50% white);
+  --primary-25: color-mix(in srgb, var(--primary) 25% white);
+  --secondary-50: color-mix(in srgb, var(--secondary) 50% white);
+  --secondary-25: color-mix(in srgb, var(--secondary) 25% white);
+  
+
+
+  /* tokens semanticos ( donde usar los colores) */
+  --color-primary: var(--primary);
+  --color-secundary: var(--secundary);
+
+
+  /* od seccion*/
+
   --font-h1: #003366;
   --font-h2: #133786;
   --font-h3: #16419c;
   --font-h4: #1948af;
   --font-h5: #194ab3;
 
-   --font-span:#003366;
-   --font-p:#1948af;
-   --font-span:#003366; /* este está repetido */
-   --font-rotative: #003366;
+  --font-span:#003366;
+  --font-p:#1948af;
+  --font-span:#003366; /* este está repetido */
+  --font-rotative: #003366;
 
   --bgBody: #d2def9;
-
+  /* colores barra de navegación */
   --bgNavbarUp: #8faeef;
   --bgNavbarDown: #bccef5;
   --linkMenuHover: #638de9;
 
-  --bgBtnHamburguesa: #; /* Que ibas a hacer aquí */
+  /* colores para footer */
+  --bgFooterUp: #8faeef;
+  --bgFooterDown: #d2def9;
 
   /* Valores para tarjetas */
   --borderCard: #1948af;
   --borderCardHover: #003366;
-
   --btnCardBorder: #8faeef;
   --btnCardTxt: #003366;
   --btnCardBg: #bccef5;
   --btnCardBgHover: #003366;
   --btnCardTxtHover: #ffffff;
-
 
   /*  Colores para Formulario*/
   --lblColor: #16419c;
@@ -39,11 +59,7 @@
   --btnTxtColor: #003366;
   --btnColorBorder: #0a6fc2;
   --btnFormHover: #2196F3;
-
-  /* cuida estos espacios, no deben existir, ensucia mucho el código */
-  /* sólo una línea de separación */
+  
 
 
-  --bgFooterUp: #8faeef;
-  --bgFooterDown: #d2def9;
 }
