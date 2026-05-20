@@ -1,6 +1,8 @@
 .navbar{
   background:  linear-gradient(to bottom , var(--bgNavbarUp), var(--bgNavbarDown) );  /* estas variables manéjalas como bg-navbar-up y bg-navbar-down por el standard ya lo piden mucho, antes valía queso*/
   height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .menu{
   display: flex;
@@ -20,4 +22,19 @@
 }
 .link-menu:hover{
   background: var(--linkMenuHover);
+}
+
+/* puntos de ruptura  */
+@media (min-width:780px){
+  .navbar{
+    padding-left: 15px;
+    padding-right: 15px;
+  }  
+}
+
+@media (min-width:1800px){
+  .navbar{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
