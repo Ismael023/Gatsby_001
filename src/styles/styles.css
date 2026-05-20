@@ -48,12 +48,11 @@ h5{
 body{  
   margin: 0;  
   background: var(--bgBody);
-  padding-left: 5px;
-  padding-right: 5px; 
+  padding: 0;
 }
 main{
   flex-grow: 1;
-  margin: 10px;
+  margin: 5px;
   padding: 5px;;
 }
 .layout{
@@ -126,9 +125,9 @@ form{
 
 /* puntos de ruptura  */
 @media (min-width:780px){
-  body{
-    padding-left: 10px;
-    padding-right: 10px;
+  main{
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .labelForm{
@@ -146,11 +145,10 @@ form{
 }
 
 @media (min-width:1800px){
-  body{
+  main{
     padding-left: 10%;
     padding-right: 10%;
   }
-
 }
 
 
