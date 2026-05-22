@@ -1,34 +1,31 @@
-/* identa bien el código para que sea fácil de leer */
 .cards{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px; 
-
- margin: 10px;
- padding: 5px;
- 
- border-radius: 6px;
+  gap: 10px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 6px;
 }
 
 .cards div{
   margin: 10px;
   padding: 10px;
   border-radius: 6px;
-  border: solid 2px var(--borderCard);
+  border: solid 2px var(--secondary-75);
   width: 300px;
   height: 350px;
   align-items: center;  
   text-align: center;
-
   transition: transform 1s ease-out;
 }
 
 .cards div:hover{
-  border: solid 2px var(--borderCardHover);
+  border: solid 3px var(--secondary);
   transform: translateY(-15px);
+  background: var(--bg-secondary);
 }
 
 .cards img{
@@ -38,24 +35,24 @@
 
 .cards h3{
   text-align: center;
-  color: var(--font-h3);
+  color: var(--primary-75);
   font-family: "Montserrat", sans-serif;
 }
 
 .cards p{
-  color: var(--font-p);
+  color: var(--secondary);
   font-family: "Montserrat", sans-serif;
 }
 
 .cards button{
   width: 100px;
   height: 40px;
-  border: 2px solid var(--btnCardBorder);
-  color: var(--btnCardTxt);
-  background-color: var(--btnCardBg);
+  border: 2px solid var(--secondary-75);
+  color: var(--secondary);
+  background-color: var(--bg-secondary);
   border-radius: 5px;
 }
 .cards button:hover{
-  background: var(--btnCardBgHover);
-  color: var(--btnCardTxtHover);
+  background: var(--tertiary);
+  color: white;
 }
