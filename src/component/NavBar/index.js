@@ -13,8 +13,7 @@ const links = [
 export default function NavBar() {
   return(
     <nav className="navbar">
-      <div className="menu">
-        {/* menu en pantalla grande */}        
+      <div className="menu">       
         {links.map( (link) => { 
           return (
             <Link 

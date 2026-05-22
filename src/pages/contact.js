@@ -13,7 +13,6 @@ const pressBtnForm02 = async (e) => {
 
   // 2. Importamos SweetAlert solo cuando se necesita
   const { default: Swal } = await import("sweetalert2");
-
   Swal.fire({
     text: 'En breve nos comunicaremos contigo.',
     icon: 'success',
@@ -44,8 +43,8 @@ const Contact = () => {
             {typeProyect.map((option) => {
               return <option key={option.value} value={option.value}>{option.option}</option>
             })}
-            </select>
-            </div>
+          </select>
+        </div>
         <div className="divForms"> 
           <label className="labelForm" htmlFor="mensaje">Mensaje</label>
           <textarea name='mensaje' placeholder='Mensaje' className="textareaForm"/>
@@ -60,5 +59,4 @@ const Contact = () => {
 }
 
 export default Contact
-
 export const Head = () => <title>Contacto</title>
