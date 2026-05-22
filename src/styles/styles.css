@@ -7,87 +7,41 @@
 }
 
 h1{
-  color: var(--font-h1);
+  color: var(--primary);
   text-align: center;
 }
 h2{
-  color: var(--font-h2);
+  color: var(--primary);
   text-align: center;
 } 
 h3{
-  color: var(--font-h3);
+  color: var(--primary-75);
   text-align: justify;
 } 
 h4{
-color: var(--font-h4);
+color: var(--primary-75);
 text-align: justify;
 } 
 h5{
-  color: var(--font-h5);
+  color: var(--secondary);
   text-align: justify;
-}
-    
+}    
 
-body{
-  display: flex;
-  flex-direction: column;
-  min-height: 100dvh;
-  margin: 0px;
-  padding: 0px;
-  background: var(--bgBodyMain);
+body{  
+  margin: 0;  
+  background: var(--bg-secondary);
+  padding: 0;
 }
 main{
   flex-grow: 1;
-  margin: 10px;
+  margin: 5px;
   padding: 5px;;
 }
-
-  /* seccion barra de navegaciónr */
-.navbar{
-  background:  linear-gradient(to bottom , var(--bgNavbarUp), var(--bgNavbarDown) );
-  height: 50px;
-}
-.menu{
+.layout{
   display: flex;
-  flex-direction: row ;
-  justify-content: flex-end;
+  flex-direction: column;
+  min-height: 100dvh;
 }
-
-.linkMenu{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  padding: 12px;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 6px;
-}
-.linkMenu:hover{
-  background: var(--linkMenuHover);
-}
-
-.btnHamburguesa{
-  display: none;
-  font-size: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
-   /* background: var(--bgBtnHamburguesa);*/
-    color: white;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    z-index: 1100;
-  width: 50px;
-  height: 40px;
-}
-
-.menuMovil{
-  display: none;
-  flex-direction: column ;
-  justify-content: flex-end;
-}
-
 
 /* formularios*/
 form{
@@ -104,86 +58,87 @@ form{
   text-align: center;
 }
 .labelForm{
- display: inline-block;
- text-align: start;
- vertical-align: top;
- color: var(--lblColor);
- font-weight: bold;
- width: 120px;
- padding: 5px;
+  display: inline-block;
+  text-align: start;
+  vertical-align: top;
+  color: var(--secondary);
+  font-weight: bold;
+  width: 95%;
+  padding: 5px;
 }
-
 .inputForm{
-  width: calc(80% - 120px);/* 70px */
+  width: 95%;
 	padding: 8px 5px;
 	border-radius: 6px ;
-	border: 2px solid var(--borderColorInput);
-	background: var(--bgColorInput);
+	border: 2px solid var(--secondary-75);
+	background: var(--bg-secondary);
 	font-size: 0.9em;
+}
+.inputForm:focus{
+  outline: none;
+  border-color: var(--tertiary);
 }
 .selectForm{
-  width: calc(80% - 120px);/* 70px */
+  width: 95%;
 	padding: 8px 5px;
 	border-radius: 6px ;
-	border: 2px solid var(--borderColorInput);
-	background: var(--bgColorInput);
+	border: 2px solid var(--secondary-75);
+	background: var(--bg-secondary);
 	font-size: 0.9em;
 }
-
 .textareaForm{
-   width: calc(80% - 120px);/* 70px */
+   width: 95%;
    height: 200px;
 	padding: 8px 5px;
 	border-radius: 6px ;
-	border: 2px solid var(--borderColorInput);
-	background: var(--bgColorInput);
+	border: 2px solid var(--secondary-75);
+	background: var(--bg-secondary);
 	font-size: 0.9em;
+}
+.textareaForm:focus{
+  outline: none;
+  border-color: var(--tertiary);
 }
 .btnForm{
   width: 100px;
   height: 40px;
-  border: 2px solid var(--btnColorBorder);
-  color: var(--btnTxtColor);
-  background-color: var(--btnForm);
+  border: 2px solid var(--secondary-75);
+  color: var(--secondary);
+  background-color: var(--bg-secondary);
   border-radius: 5px;
 }
-
 .btnForm:hover{
-  background: var(--btnFormHover);
+  background: var(--tertiary);
   color: white;
 } 
 
 
-/* responsive */
+/* puntos de ruptura  */
+@media (min-width:780px){
+  main{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-@media (max-width: 700px) {
-  /*
-  .menu{
-    display: none;
-  } 
-  
-  .btnHamburguesa {
-    display: flex;
-  }
-  .menuMovil{
-    display: flex;
-  }
-  .linkMenu{
-    flex-direction: column ;
-    align-items: end;
-  }
-*/
   .labelForm{
-    width: 95%;
+    width: 120px;
   }
-.inputForm{
-  width: 95%;
-}
-.selectForm{
-  width: 95%;
-}
-.textareaForm{
-  width: 95%;
+  .inputForm{
+    width: calc(80% - 120px);
+  }
+  .selectForm{
+    width: calc(80% - 120px);
+  }
+  .textareaForm{
+    width: calc(80% - 120px);
+  }
 }
 
+@media (min-width:1800px){
+  main{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
+
+
