@@ -1,6 +1,6 @@
 
 footer{
-  background:  linear-gradient(to top, var(--bgFooterUp), var(--bgFooterDown) );
+  background: var(--gradient-secondary);
   height: 50px;
   display: flex;
   text-align: center;
@@ -11,8 +11,9 @@ footer{
 }
 
 footer div{
-  color: var(--font-h3);
+  color: var(--primary);
   text-align: center;
   font-family: "Gelasio", sans-serif;
   display: inline-block;
+  font-size: 1.3em;
 }
