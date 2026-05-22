@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../component/Layout"
-import Swal from "sweetalert2" //se elimina ya que causa error al compilar el sitio
 
 const typeProyect =[
   {option :"Tipo de Proyecto", value : 0},
@@ -25,9 +24,8 @@ const pressBtnForm02 = async (e) => {
 
 const Contact = () => {
   return (
-    <Layout>      
-      <h2>Formulario de contacto</h2>
-      <form>
+    <Layout pageTitle="Formulario de contacto"> 
+      <form name="contacto" method="POST" date-netlify="true">
         <div className="divForms"> 
           <label className='labelForm' htmlFor="nombre">Nombre</label>
           <input type='text' name="nombre" id="nombre" placeholder='Nombre' className="inputForm"/>
