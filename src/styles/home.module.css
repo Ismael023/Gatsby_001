@@ -1,24 +1,24 @@
 /* identa bien el código para que sea fácil de leer */
   
 .header{
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header h1{  
-  font-family: "Gelasio", serif; /*"Jacques Francois Shadow", serif;*/
+.header h2{  
+  font-family: "Gelasio", serif;
   font-weight: 700;
   font-style: normal;
   font-size: 3em;
-  color: var(--font-h1);
+  color: var(--primary-75);
   text-align: center;
 }
 
 .header h3{
   font-family: "Montserrat", sans-serif;
   text-align: left;
-  color: var(--font-h3);
+  color: var(--secondary);
   font-size: 2.5rem;
   display: inline-block;
 }
@@ -26,7 +26,7 @@ align-items: center;
 .header p{
   font-family: "Montserrat", sans-serif;
   text-align: justify;
-  color: var(--font-p);
+  color: var(--secondary);
   font-size: 1.3rem;
 }
 
@@ -37,27 +37,25 @@ align-items: center;
   margin-right: 20px;
 }
 
-  span{
-    font-family: "Montserrat", sans-serif;
-    text-align: justify;
-    color: var(--font-span) ; 
-
-    font-style: normal;
-   /* font-size: 1rem;*/
-    font-weight: bold;
-  }
+span{
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: var(--prymary);
+  font-style: normal;
+  font-weight: bold;
+}
 
 .rotative{
   display: inline-block;
-  color: var(--font-rotative);
+  color: var(--primary);
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   text-align: justify;
   font-size: 3rem;
-
   /* Animación */
   animation: aparecerYSubir 0.5s ease-out forwards;
 }
+
 @keyframes aparecerYSubir {
   0% {
     opacity: 0;
