@@ -23,7 +23,7 @@ const pressBtnForm02 = async (e) => {
 
 const Contact = () => {
   return (
-    <Layout pageTitle="Formulario de contacto"> 
+    <Layout pageTitle="Si buscas resultados, estás en el lugar correcto"> 
       <form name="contacto" method="POST" date-netlify="true">
         <div className="divForms"> 
           <label className='labelForm' htmlFor="nombre">Nombre</label>
