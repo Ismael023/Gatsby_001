@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../component/Layout"
-import "./servicios.css"
+//import "./servicios.css"
 
 const soporteTecnico = () => {
   return( 
