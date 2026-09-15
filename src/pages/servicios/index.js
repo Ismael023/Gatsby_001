@@ -3,7 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from "../../component/Layout"
 import image from "../../images/logo-SF_02.png"
-import * as styles from "./servicios.css"
+
+//import * as styles from "../../styles/servicios.module.css"
+import * as styles from "./servicios.module.css"
+//import  "./servicios.css"
+
+
 
 const cards =[
   {ic: 1,img:"image", title:"Soporte técnico", 
