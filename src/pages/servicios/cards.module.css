@@ -1,3 +1,9 @@
+.descript{
+  color: var(--secondary);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
 .cards{
   display: flex;
   flex-direction: row;
@@ -44,18 +50,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.cards button{
-  width: 100px;
-  height: 40px;
-  border: 2px solid var(--secondary-75);
-  color: var(--secondary);
-  background-color: var(--bg-secondary);
-  border-radius: 5px;
-}
-.cards button:hover{
-  background: var(--tertiary);
-  color: white;
-}
+
 
  .btnCard{
   display: inline-flex;
