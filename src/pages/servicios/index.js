@@ -4,31 +4,30 @@ import { Link } from "gatsby"
 import Layout from "../../component/Layout"
 import image from "../../images/logo-SF_02.png"
 
-//import * as styles from "../../styles/servicios.module.css"
-import * as styles from "./servicios.module.css"
-//import  "./servicios.css"
-
-
+import * as styles from "./cards.module.css"
 
 const cards =[
   {ic: 1,img:"image", title:"Soporte técnico", 
-    description:"LULULULULÑUI", 
+    description:"Resolver problemas de equipos de cómputo", 
     href:"/servicios/Soporte_Tecnico/"},
   {ic: 2,img:"image", title:"Mantenimiento a equipo de computo", 
-    description:"LULULULULÑUI", 
+    description:"Garantizar el funcionamiento optimo de equipos de escritorio", 
     href:"/pendiente/"},
   {ic: 3,img:"image", title:"Desarrollo de paginas web", 
-    description:"LULULULULÑUI", 
+    description:"Impulsado tu presencia en la web con paginas personalziadas", 
     href:"/pendiente/"},
   {ic: 4,img:"image", title:"Mantenimiento a laptops", 
-    description:"LULULULULÑUI", 
+    description:"Garantizar el funcionamiento optimo de los equipos portatiles", 
     href:"/pendiente/"}
       ];
 
 
 const Servicios = () => {
   return (
-    <Layout pageTitle="Servicios">   
+    <Layout pageTitle="Servicios">
+      <>
+        <p className={styles.descript}>Estos son algunos de los servicios que ofrecemos actualmente</p>
+      </>
       <section className={styles.cards}>
         {cards.map((card) => {
           return (
