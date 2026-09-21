@@ -12,13 +12,13 @@ const cards =[
     href:"/servicios/Soporte_Tecnico/"},
   {ic: 2,img:"image", title:"Mantenimiento a equipo de computo", 
     description:"Garantizar el funcionamiento optimo de equipos de escritorio", 
-    href:"/pendiente/"},
+    href:"/Mantenimiento/"},
   {ic: 3,img:"image", title:"Desarrollo de paginas web", 
     description:"Impulsado tu presencia en la web con paginas personalziadas", 
-    href:"/pendiente/"},
+    href:"/Desarrollo_Web/"},
   {ic: 4,img:"image", title:"Mantenimiento a laptops", 
     description:"Garantizar el funcionamiento optimo de los equipos portatiles", 
-    href:"/pendiente/"}
+    href:"/Mantenimiento_Laptop/"}
       ];
 
 
