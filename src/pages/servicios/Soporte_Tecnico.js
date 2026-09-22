@@ -5,7 +5,8 @@ import Layout from "../../component/Layout"
 const soporteTecnico = () => {
   return( 
     <Layout pageTitle = "Soporte Técnico">
-      <p>prueba</p>
+      <h3>¿Tu equipo o programas se bloquean?, ¿Estas perdiendo tiempo al trabajar?</h3>
+      <p>Revisamos tu equipo </p>
     </Layout> 
   
   )

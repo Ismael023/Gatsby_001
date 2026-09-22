@@ -8,7 +8,7 @@ import * as styles from "./cards.module.css"
 
 const cards =[
   {ic: 1,img:"image", title:"Soporte técnico", 
-    description:"Resolver problemas de equipos de cómputo", 
+    description:"Resolver tus problemas con equipos de cómputo", 
     href:"/servicios/Soporte_Tecnico/"},
   {ic: 2,img:"image", title:"Mantenimiento a equipo de computo", 
     description:"Garantizar el funcionamiento optimo de equipos de escritorio", 
