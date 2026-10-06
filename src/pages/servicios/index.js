@@ -1,68 +1,68 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../../component/Layout"
-import image from "../../images/logo-SF_02.png"
+// import image from "../../images/logo-SF_02.png"
 
-import * as styles from "./cards.module.css"
+import * as styles from "./cards.module.css"              
+const Servicios = ({data}) => {
+  
+   console.log(data)
 
-const cards =[
-  {ic: 1,img:"image", title:"Soporte técnico", 
-    description:"Resolver tus problemas con equipos de cómputo", 
-    href:"/servicios/Soporte_Tecnico/"},
-  {ic: 2,img:"image", title:"Mantenimiento a equipo de computo", 
-    description:"Garantizar el funcionamiento optimo de equipos de escritorio", 
-    href:"/Mantenimiento/"},
-  {ic: 3,img:"image", title:"Desarrollo de paginas web", 
-    description:"Impulsado tu presencia en la web con paginas personalziadas", 
-    href:"/Desarrollo_Web/"},
-  {ic: 4,img:"image", title:"Mantenimiento a laptops", 
-    description:"Garantizar el funcionamiento optimo de los equipos portatiles", 
-    href:"/Mantenimiento_Laptop/"}
-      ];
-
-
-const Servicios = () => {
+  const servicesCard = data.services.nodes
   return (
     <Layout pageTitle="Servicios">
       <>
-        <p className={styles.descript}>Estos son algunos de los servicios que ofrecemos actualmente</p>
+        {/*<p className={styles.descript}>Estos son algunos de los servicios que ofrecemos actualmente</p>*/}
       </>
       <section className={styles.cards}>
-        {cards.map((card) => {
+        {servicesCard.map((card) => {
           return (
-            <div key ={card.id}>
-              <img src={image} alt={card.title} ></img>
-              <h3>{card.title}</h3>
-              <p>{card.description} </p>
+            <div key ={card.frontmatter.id_serv}>
+             {/* <img src={thumbs} alt={card.title} ></img>*/}
+              <h3>{card.frontmatter.title}</h3>
+              <p dangerouslySetInnerHTML={{ __html: card.frontmatter.introduction }} />
               <Link
-                key={card.id}
-                to={card.href}
+                key={card.frontmatter.id_serv}
+                to={card.frontmatter.slug}
                 className={styles.btnCard}
-                title={card.title} >
-                Leer Más
+                title={card.frontmatter.title} >
+                Leer más
               </Link>
             </div>
           )
           })
         }
-      </section>
+      </section>      
     </Layout>
   )
 }
 
+// consulta para recuperar info mediante GraphQL
+export const query = graphql`
+  query services {
+    services: allMarkdownRemark(sort: {frontmatter: {id_serv: ASC}}) {
+      nodes {
+        frontmatter {
+          id_serv
+          title
+          subtitle
+          slug
+          introduction          
+        }
+        id
+      }
+    }
+    descript: site {
+      siteMetadata {
+        descripcion
+        siteUrl
+      }
+    }
+  }
+`
+
 export default Servicios
 export const Head = () => <title>Servicios</title>
 
-/*
-  {links.map( (link) => { 
-    return (
-      <Link 
-        key={link.id}
-        to={link.href}
-        className="link-menu"  
-        title={link.title}
-      >
-        {link.name}
-  </Link>
-*/
+
