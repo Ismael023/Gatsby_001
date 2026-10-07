@@ -1,0 +1,41 @@
+.boxCenter{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.logoHome{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.subtitle{
+  text-align: left;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary);
+  font-size: 1.5rem;
+  /*
+  */
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 200px;
+  height: 60px;
+  border: 2px solid var(--secondary-75);
+  color: var(--secondary);
+  background-color: var(--bg-secondary);
+  border-radius: 5px;  
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: var(--tertiary);
+  color: white;
+}
