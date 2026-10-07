@@ -10,8 +10,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin: 10px;
+  gap: 5px;
+  margin-top: 5px;
+  margin: 5px 5px 10px 5px;
   padding: 5px;
   border-radius: 6px;
 }
@@ -21,8 +22,8 @@
   padding: 10px;
   border-radius: 6px;
   border: solid 2px var(--secondary-75);
-  width: 300px;
-  height: 350px;
+  width: 300px; /*300px*/
+  height: 400px;  /*350px*/
   align-items: center;  
   text-align: center;
   transition: transform 1s ease-out;
@@ -35,19 +36,22 @@
 }
 
 .cards img{
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .cards h3{
   text-align: center;
   color: var(--primary-75);
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 25px;
 }
 
 .cards p{
   color: var(--secondary);
   font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  margin-bottom: 25px;
 }
 
 
