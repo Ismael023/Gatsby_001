@@ -6,7 +6,7 @@ import image from "../images/logo-SF_02.png"
 
 const ServiceTemplate = ({data}) => {
   const { html } = data.markdownRemark 
-  const {title,subtitle, introduction } = data.markdownRemark.frontmatter
+  const {title,subtitle, introduction, slug } = data.markdownRemark.frontmatter
 
   return( 
     <Layout pageTitle = {title}>
@@ -19,15 +19,14 @@ const ServiceTemplate = ({data}) => {
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
       <div className={styles.boxCenter}>
         <Link 
-          className= {styles.btn}       
-          to="/contact"        
+          className= {styles.btn}
+          to={`/contact?servicio=${slug}`}
           title ="Contacto" >
           Contacto
         </Link>
       </div>
     </Layout> 
   )
-  
 }
 
 export default ServiceTemplate
@@ -38,7 +37,8 @@ export const query = graphql`
       frontmatter {
         title
         subtitle
-        introduction        
+        introduction
+        slug
       }
     }
   }
