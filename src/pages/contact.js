@@ -16,7 +16,7 @@ const pressBtnForm02 = async (e) => {
 }
 
 const Contact = ({data, location}) => {
-  console.log(data)
+  //console.log(data)
   const listServices = data.allMarkdownRemark.nodes
 
    // Estado para el select

@@ -7,13 +7,12 @@ import Layout from "../../component/Layout"
 import * as styles from "./cards.module.css"              
 const Servicios = ({data}) => {
   
-   console.log(data)
-
+  //console.log(data)
   const servicesCard = data.services.nodes
   return (
     <Layout pageTitle="Servicios">
       <>
-        {/*<p className={styles.descript}>Estos son algunos de los servicios que ofrecemos actualmente</p>*/}
+        {/*<h2 className={styles.descript}>Estos son algunos de los servicios que ofrecemos actualmente</h2>*/}
       </>
       <section className={styles.cards}>
         {servicesCard.map((card) => {
@@ -63,6 +62,15 @@ export const query = graphql`
 `
 
 export default Servicios
-export const Head = () => <title>Servicios</title>
+export const Head = () => (
+  <>
+    <title>Servicios</title>
+    <meta 
+      name="lalalala" 
+      content="lalalalaal"
+      ></meta>
+  </>
+  
+)
 
 
