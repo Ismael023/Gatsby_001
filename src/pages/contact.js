@@ -34,13 +34,14 @@ const Contact = ({data, location}) => {
 
   return (
     <Layout pageTitle="Si buscas resultados, estás en el lugar correcto"> 
+
       <form name="contacto" method="POST" date-netlify="true">
         <div className="divForms"> 
           <label className='labelForm' htmlFor="nombre">Nombre</label>
           <input type='text' name="nombre" id="nombre" placeholder='Nombre' className="inputForm"/>
         </div>
         <div className="divForms"> 
-          <label className="labelForm" htmlFor="email">Email</label>
+          <label className="labelForm" htmlFor="email">Correo Electrónico</label>
           <input type='email' name='email' placeholder='Email' className="inputForm"/>
         </div>
         <div className="divForms"> 
@@ -67,8 +68,8 @@ const Contact = ({data, location}) => {
         </div>
 
         <div className="divForms"> 
-          <label className="labelForm" htmlFor="mensaje">Mensaje</label>
-          <textarea name='mensaje' className="textareaForm" placeholder='Cuentame que te gustaria resolver o mejorar'/>
+          <label className="labelForm" htmlFor="mensaje">Cuéntame qué necesitas</label>
+          <textarea name='mensaje' className="textareaForm" placeholder='Describe brevemente lo que necesitas y me pondré en contacto contigo para conocer los detalles y determinar la mejor alternativa.'/>
         </div>
 
         <div className="divForms">
