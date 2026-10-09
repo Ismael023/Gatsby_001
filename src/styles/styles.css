@@ -127,16 +127,17 @@ form{
   }
 
   .labelForm{
-    width: 120px;
+    width: 170px;/* */
+    margin-right: 15px;
   }
   .inputForm{
-    width: calc(80% - 120px);
+    width: calc(75% - 170px);/* antes 80% */
   }
   .selectForm{
-    width: calc(80% - 120px);
+    width: calc(75% - 170px);
   }
   .textareaForm{
-    width: calc(80% - 120px);
+    width: calc(75% - 170px);
   }
 }
 
