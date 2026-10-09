@@ -25,7 +25,14 @@ h4{
 h5{
   color: var(--secondary);
   text-align: justify;
-}    
+}
+
+p{
+  color: var(--primary)  
+}
+li{
+  color: var(--primary);
+}
 
 body{  
   margin: 0;  
