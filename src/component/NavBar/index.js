@@ -6,8 +6,10 @@ import  "../../styles/colors.css";
 
 const links = [  
   {name: 'Home', href: '/', title:'Pagina principal', id:1},
-  {name: 'Portafolio', href: '/portfolio', title:'Portafolio', id:2 },
-  {name: 'Contacto', href: '/contact', title:'Contacto', id:3 }
+  {name: 'Servicios', href: '/servicios/', title:'Servicios', id:2 },
+  {name: 'Sobre mí', href: '/about', title:'Sobre mí', id:3 },
+  {/*name: 'Proyectos', href: '/portfolio', title:'Portafolio', id:4*/ },
+  {name: 'Contacto', href: '/contact', title:'Contacto', id:5 }
 ];
 
 export default function NavBar() {

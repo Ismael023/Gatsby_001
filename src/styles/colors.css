@@ -3,6 +3,8 @@
   --primary: #003366;
   --secondary: #1948af;
   --tertiary:#638de9; /*8faeef*/
+
+
   /* colores con degradados */
   --primary-75: color-mix(in srgb, var(--primary) 75%, white);
   --primary-50: color-mix(in srgb, var(--primary) 50%, white);
@@ -15,7 +17,10 @@
   --tertiary-25: color-mix(in srgb, var(--tertiary) 25%, white);
   
   --bg-primary: #8faeef;
-  --bg-secondary: #d2def9;
+  --bg-secondary: #F8F7F4;  /*#d2def9  */
+
+  --bg-porcelain: #F8F7F4;
+
 
   /* tokens semanticos ( donde usar los colores) */
   --gradient-primary: linear-gradient(
